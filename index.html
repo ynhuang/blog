@@ -187,6 +187,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -299,56 +309,14 @@
 
       
         
-          
-            <p>此篇記錄HTML與CSS相關內容<br>由於對於HTML和CSS已有一定程度了解，故只記錄原先不太清楚的部分  </p>
-<h1 id="Front-end-html-css-javascript"><a href="#Front-end-html-css-javascript" class="headerlink" title="Front-end: html, css, javascript"></a>Front-end: html, css, javascript</h1><ul>
-<li>HTML: define the structure of a webpage</li>
-<li>CSS: define the style of html</li>
-<li>Javascript: add logec and interactivity to a page</li>
-</ul>
-<h1 id="Back-end"><a href="#Back-end" class="headerlink" title="Back-end:"></a>Back-end:</h1><p>*</p>
-<h1 id="MDN"><a href="#MDN" class="headerlink" title="MDN"></a>MDN</h1><p>Mozilla Developer Network：open web技術相關資訊，包含html, css, js, api等<br><a href="https://web.archive.org/web/20151206121621/https://developer.mozilla.org/en-US/" target="_blank" rel="noopener">MDN website</a></p>
-<h1 id="HTML-form-tag"><a href="#HTML-form-tag" class="headerlink" title="HTML: form tag"></a>HTML: form tag</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;form action=&quot;/my-form-submitting-page&quot; method=&quot;post&quot;&gt;</span><br><span class="line">    &lt;!-- All our inputs will go in here --&gt;</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>action: the URL to send form data to</li>
-<li>method: the type of HTTP request</li>
-</ul>
-<h1 id="嵌入css-file"><a href="#嵌入css-file" class="headerlink" title="嵌入css file"></a>嵌入css file</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;相對路徑&quot;&gt;</span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure>
-<h1 id="CSS-id-vs-class"><a href="#CSS-id-vs-class" class="headerlink" title="CSS: id vs class"></a>CSS: id vs class</h1><ul>
-<li>id:唯一性、不可重複，用#關聯</li>
-<li>class: 可重複，用.關連</li>
-</ul>
-<h1 id="CSS-selectors"><a href="#CSS-selectors" class="headerlink" title="CSS: selectors"></a>CSS: selectors</h1><ul>
-<li>Element: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">li &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>class: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.hello &#123;&#125;</span><br></pre></td></tr></table></figure></li>
-<li>id: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#name &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>Star: select all elements<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">  border: 1px solid lightgrey;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>Descendant Selector: The descendant selector matches all elements that are descendants of a specified element<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">li a &#123;</span><br><span class="line">  color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>Adjacent Selector: An adjacent sibling combinator selector allows you to select an element that is directly after another specific element<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">h4 + ul &#123;</span><br><span class="line">  border: 4px solid red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>Attribute Selector: used to select elements with a specified attribute<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a[herf=&quot;heep://www.google.com&quot;] &#123;</span><br><span class="line">  background: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>nth of type: Specify a background color for every ‘ul’ element that is the third ul element of its parent:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ul:nth-of-type(3)&#123;</span><br><span class="line">  background: purple;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h1 id="CSS-font"><a href="#CSS-font" class="headerlink" title="CSS: font"></a>CSS: font</h1><ul>
-<li>font-family: 字型</li>
-<li>font-size: 大小</li>
-<li>font-weigth: 粗細</li>
-<li>line-height: 行距</li>
-<li>text-align: 對齊方式</li>
-<li>text-decoration: 底線或刪除線之類的</li>
-<li><a href="https://fonts.google.com/" target="_blank" rel="noopener">使用google字體</a>：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;link href=&apos;https://fonts.googleapis.com/css?family=Raleway:400,700|Indie+Flower&apos; rel=&apos;stylesheet&apos; type=&apos;text/css&apos;&gt;</span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h1 id="CSS-box-model"><a href="#CSS-box-model" class="headerlink" title="CSS: box model"></a>CSS: box model</h1><img src="/2018/09/04/The-Web-Developer-Bootcamp-學習筆記1/css_box_model.png">
-<ul>
-<li>content: width and height<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">width: 50%;</span><br></pre></td></tr></table></figure></li>
-<li>padding:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">padding: 10px;</span><br><span class="line">padding-left: 40px;</span><br></pre></td></tr></table></figure></li>
-<li>border:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">border: 2px solid blue;</span><br></pre></td></tr></table></figure></li>
-<li>margin:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">margin: 100px; </span><br><span class="line">margin-top: 500px;</span><br><span class="line">margin: 20px 40px 500px 100px</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h1 id="CSS-image-gallery-example"><a href="#CSS-image-gallery-example" class="headerlink" title="CSS: image gallery example"></a>CSS: image gallery example</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">img &#123; //設定img每張佔畫面的30%，並且設定為左浮動&amp;置中</span><br><span class="line">  width: 30%; //佔畫面的30%</span><br><span class="line">  float: left; //左浮動</span><br><span class="line">  margin: 1.66%; //數學計算出來100 = 1.66*6+90</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-          
+          <p>此篇記錄HTML與CSS相關內容<br>由於對於HTML和CSS已有一定程度了解，故只記錄原先不太清楚的部分  </p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/04/The-Web-Developer-Bootcamp-學習筆記1/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -568,10 +536,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">1</span>
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">tags</span>
-                
+                </a>
               </div>
             
 
